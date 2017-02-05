@@ -10,7 +10,7 @@
     }
     ```
 
-    or 
+    or
 
     ```javascript
     "scripts": {
@@ -38,7 +38,7 @@
     }
     ```
 
-- Pass arguments to npm scripts by adding `--` following the arguments
+- Pass arguments to npm scripts by adding a `--` before the arguments
 
     ```javascript
     "scripts": {
@@ -48,6 +48,8 @@
 
 - See **package variables** via `npm run env | grep "npm_package" | less`
     - `$npm_package_version` is handy
+
+- To enable npm script completions in your shell, do `npm completions >> ~/.bashrc` (or `/.zshrc`) once
 
 ### Handy "npm as a build tool" packages
 - `npm-run-all` - Runs npm scripts optionally in parallel
@@ -59,6 +61,9 @@
     ```javascript
      "prepush": "npm run lint"
     ```
-     
+- `ntl` - npm task list, lists all tasks available in package.json
+    - Usage: `ntl`
+- `p-s` - package script; helps with managing external scripts outside of package.json
+    - Usage: after moving your scripts out to `package-scripts.js`, you can run nps` to see a list of tasks
 
 
