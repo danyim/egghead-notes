@@ -18,9 +18,9 @@
     }
     ```
 
-But by running `npm run env | grep "^PATH"`, you'll see that NPM automatically adds the local bin folder.
+    But by running `npm run env | grep "^PATH"`, you'll see that NPM automatically adds the local bin folder.
 
-So all in all, you should reference the local bins by just their name:
+    So all in all, you should reference the local bins by just their name:
 
     ```javascript
     "scripts": {
@@ -28,8 +28,10 @@ So all in all, you should reference the local bins by just their name:
     }
     ```
 
+- aaaa
+
 ### Handy "npm as a build tool" Packages
-- `npm-run-all` Runs npm scripts optionally in parallel
-    Usage: `npm-run-all --parallel lint:* build`
+- `npm-run-all` - Runs npm scripts optionally in parallel
+    - Usage: `npm-run-all --parallel lint:* build`
 
 
